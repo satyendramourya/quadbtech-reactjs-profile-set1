@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# GitHub Job Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the GitHub Job Portal project! This is a web application built using React, React Router, and Redux to help you find job listings for different programming languages on GitHub Jobs.
 
-## Available Scripts
+## Assignment Guidelines
 
-In the project directory, you can run:
+Please follow the following guidelines while working on this assignment:
 
-### `npm start`
+1. **Assignment Duration**: You are expected to complete the assignment within 1 day and submit the entire code.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Readme**: Make sure to read this Readme to understand the project requirements.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **React Router**: Utilize React Router for routing within the application.
 
-### `npm test`
+4. **Redux**: Use Redux for state management to efficiently manage application-wide state.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **UI and Functionality**:
+   - Implement a login/signup feature with minimal but relevant login details.
+   - Utilize local storage/session storage to maintain the user's session once they are logged in.
+   - Create a landing page with a single input to select the programming language the user is interested in for job searches.
+   - Make requests to the GitHub Jobs API (or jsearch API) to fetch job listings based on the selected programming language.
+   - Display a list of job listings and allow users to view job details.
+   - Implement a separate page for viewing detailed job postings with an option to apply.
+   - When a user chooses to apply, present them with a form asking for:
+     - Name
+     - Email
+     - Cover Letter Note
+     - Optional file upload for resume, cover letter, etc.
+   - After the user submits the form, show a success page with a preview of their application. No API requests are needed for this step; use state management to display the data within the app.
 
-### `npm run build`
+## GitHub Public API Replacement
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Please note that the GitHub public API has been deprecated, and for this project, we have used the jsearch API to retrieve job listings.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## About the Author
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was created by Satyendra Mourya.
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can access the live demo of this project at [Live Demo](https://quadbtech-reactjs-profile-set1.vercel.app/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run this project locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository to your local machine:
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/github-job-portal.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd github-job-portal
+   
+3. Install dependencies:
 
-### Code Splitting
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Open your browser and visit http://localhost:3000 to view the application.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
